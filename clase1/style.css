@@ -1,0 +1,33 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: medium;
+}
+
+body {
+    background-color: #fff6f6;
+    text-align: center;
+}
+
+h1 {
+    color: #643939;
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+button {
+    margin: 30px;
+    background-color: #643939;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.div-centro {
+  margin: 65px 50px;
+}
