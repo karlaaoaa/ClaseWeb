@@ -28,6 +28,10 @@ button {
     border: none;
 }
 
-.div-centro {
-  margin: 65px 50px;
+.div-form {
+  margin: 60px auto;
+  background-color: white;
+  border-radius: 25px;
+  width: 340px;
+  padding: 30px 60px;
 }
