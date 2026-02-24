@@ -10,7 +10,9 @@ function login(){
     );
 
     if(encontrado){
-        alert("Login correcto");
+        const token = "token_" + Date.now();
+        localStorage.setItem("token", token);
+        localStorage.setItem("sesion", JSON.stringify(encontrado));
         window.location.href = "home.html";
     }else{
         alert("Usuario o contraseña incorrectos");
@@ -39,6 +41,7 @@ function registrar() {
 
     console.log("Usuarios guardados en JSON:");
     console.log(usuarios);
+
 }
 
 function irCrearCuenta(){
@@ -49,3 +52,35 @@ function irLogin(){
     window.location.href = "login.html";
 }
 
+function cargarHeaderFooter(){
+
+    fetch("header.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("header").innerHTML = data;
+    });
+
+    fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+
+}
+
+function verificarSesion(){
+
+    const token = localStorage.getItem("token");
+
+    if(!token){
+        window.location.href = "login.html";
+    }
+
+}
+
+function logout(){
+
+    localStorage.removeItem("token");
+    localStorage.removeItem("sesion");
+    window.location.href = "login.html";
+}
