@@ -84,3 +84,17 @@ function logout(){
     localStorage.removeItem("sesion");
     window.location.href = "login.html";
 }
+
+function cargarUnPokemon(){
+
+    fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+    .then(response => response.json())
+    .then(data => {
+
+        console.log(data);
+        document.getElementById("nombre").innerText = data.name;
+        document.getElementById("imagen").src = data.sprites.front_default;
+
+    });
+
+}
