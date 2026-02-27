@@ -35,3 +35,8 @@ button {
   width: 340px;
   padding: 30px 60px;
 }
+
+.div-footer{
+  position:absolute;
+  bottom:5px;
+}
