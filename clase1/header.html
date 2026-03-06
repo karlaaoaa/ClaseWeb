@@ -1,10 +1,19 @@
 <header>
+    <nav class="nav">
+        <h1>Pokemones</h1>
+        <div class="top-bar">
+            <a href="home.html">Home</a>
+            <a href="pagina1.html">Chiste 1</a>
+            <a href="pagina2.html">Chiste 2</a>
+            <button onclick="logout()">Logout</button> <br><br>
 
-    <h2>PokeAPI</h2>
+            <div class="barra-busqueda">
+                <input type="text" id="buscarPokemon" placeholder="Buscar por nombre o ID">
+                <button class="btn-buscar" onclick="buscarPokemon()">Buscar</button>
+            </div>    
+        </div>
+        
 
-    <nav>
-        <a href="home.html">Home</a>
-        <button onclick="logout()">Logout</button>
     </nav>
 
 </header>
