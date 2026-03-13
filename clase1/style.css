@@ -48,6 +48,8 @@ button {
 body {
     background-color: #fff6f6;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -252,7 +254,153 @@ main {
     border-radius: 100vmax;
 }
 
+.batalla-container{
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
 
+.busqueda{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top: 40px;
+    margin-bottom:30px;
+}
+
+.busqueda input{
+    padding:10px 15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.busqueda button{
+    background-color:#643939;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.busqueda button:hover{
+    transform:scale(1.05);
+}
+
+.contenedor-batalla{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+#carta1, #carta2{
+    width:250px;
+}
+
+.btn-batalla{
+    margin:50px auto;
+    padding: 10px 20px;
+    display: block;
+}
+
+.btn-batalla:hover{
+    transform:scale(1.3);
+}
+
+.arena{
+    max-width:900px;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 80px;
+}
+
+.arena div{
+    text-align:center;
+}
+
+.arena img{
+    width:150px;
+}
+
+.vs{
+    font-size:40px;
+    font-weight:bold;
+    color:#643939;
+}
+
+.ganador-container{
+    text-align:center;
+    margin-top:80px;
+}
+
+.ganador-container h1{
+    font-size:45px;
+    margin-bottom:40px;
+}
+
+#pokemonGanador{
+    display:flex;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+#logBatalla{
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    height:250px;
+    overflow-y:auto;
+}
+
+.turno{
+    background:#f7f7f7;
+    border-radius:12px;
+    padding:10px 15px;
+    margin-bottom:10px;
+    font-size:14px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.turno strong{
+    color:#643939;
+}
+
+.ataque{
+    color:#d62828;
+    font-weight:bold;
+}
+
+.defensa{
+    color:#10bd4d;
+    font-weight:bold;
+}
+
+.fallo{
+    color:#ff9f1c;
+    font-weight:bold;
+}
+
+.turno{
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(5px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 
 .normal {
     background-color: var(--type-normal);
