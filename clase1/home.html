@@ -10,8 +10,12 @@
 </head>
 <body>
     <div id="header"></div>
-    
+     
     <main>
+        <div class="barra-busqueda">
+            <input type="text" id="buscarPokemon" placeholder="Buscar por nombre o ID">
+            <button class="btn-buscar" onclick="buscarPokemon()">Buscar</button>
+        </div>
         <ul class="nav-list">
 
             <li class="nav-item"><button class="btn btn-header" id="ver-todos">Ver Todos</button></li>
@@ -44,6 +48,7 @@
 
     <div class="div-footer" id="footer"></div>
     <script src="script.js"></script>
+    <script src="pokedex.js"></script>
 
     <script>
         cargarHeaderFooter();

@@ -6,18 +6,30 @@
         "width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Pagina 1</title>
+    <title>Elegir Pokemon</title>
 </head>
 <body>
     <div id="header"></div>
-    <div class="div-centro2">
-       <h1>Chiste malo 2</h1>
-        <h2>De donde sale la porcelana?</h2>
-        <h2>De la porceoveja</h2>
+    <div class="busqueda">
+        <input type="text" id="pokemon1" placeholder="Pokemon 1 (nombre o id)">
+        <button class="btn-buscar" onclick="buscarPokemon(1)">Buscar</button>
+
+        <input type="text" id="pokemon2" placeholder="Pokemon 2 (nombre o id)">
+        <button class="btn-buscar" onclick="buscarPokemon(2)">Buscar</button>
     </div>
+
+    <div class="contenedor-batalla">
+        <div id="carta1"></div>
+        <div id="carta2"></div>
+    </div>
+
+    <button class="btn-buscar btn-batalla" onclick="iniciarBatalla()">Iniciar Batalla</button>
+
+
     <div id="footer"></div>
 
     <script src="script.js"></script>
+    <script src="batalla.js"></script>
 
     <script>
         cargarHeaderFooter();

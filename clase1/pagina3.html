@@ -6,30 +6,25 @@
         "width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Batalla Pokemon</title>
+    <title>Ganador Pokemon</title>
 </head>
 <body>
     <div id="header"></div>
 
-    <div class="arena">
+    <div class="ganador-container">
 
-        <div id="poke1"></div>
+        <h1>GANADOR</h1>
 
-        <div class="vs">VS</div>
+        <div id="pokemonGanador"></div>
 
-        <div id="poke2"></div>
+        <button class="btn-batalla btn-buscar" onclick="jugarOtra()">Jugar otra batalla</button>
 
     </div>
-    
-    <button class="btn-buscar btn-batalla" onclick="siguienteTurno()">Siguiente Turno</button>
-
-    <div id="logBatalla"></div>
-
-
+   
     <div id="footer"></div>
 
     <script src="script.js"></script>
-    <script src="pelea.js"></script>
+    <script src="ganador.js"></script>
 
 
     <script>
